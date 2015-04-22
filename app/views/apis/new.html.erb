@@ -1,0 +1,12 @@
+<div>
+  <h1>API Key Registration</h1>
+  <p>Thank you for taking interest in the Chinooks Playlist API.
+    Please press the button below to create your unique API key.</p>
+  <p>Note that upon generating your key, you cannot recover your key if lost.</p>
+
+  <%= form_for(@api) do |a| %>
+    <%= a.hidden_field(:id, :value => 0) %>
+    <%= a.submit('Create Key') %>
+  <%end%>
+
+</div>
